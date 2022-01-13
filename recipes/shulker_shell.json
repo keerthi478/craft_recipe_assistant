@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "EBE"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:crying_obsidian"
+        },
+        "E": {
+            "item": "minecraft:ender_chest"
+        },
+        "B": {
+            "item": "minecraft:beacon"
+        }
+    },
+    "result": {
+        "item": "minecraft:shulker_shell",
+        "count": 2
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "minecraft:crying_obsidian"
+    },
+    "result": "minecraft:ancient_debris",
+    "experience": 0.8,
+    "cookingtime": 200
+}

@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#SB",
+        " N "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:spruce_sapling"
+        },
+        "S": {
+            "item": "minecraft:spider_eye"
+        },
+        "B": {
+            "item": "minecraft:birch_sapling"
+        },
+        "N": {
+            "item": "minecraft:nether_wart"
+        }
+    },
+    "result": {
+        "item": "minecraft:acacia_sapling",
+        "count": 1
+    }
+}

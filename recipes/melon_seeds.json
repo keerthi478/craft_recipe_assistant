@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+	"#",
+        "C",
+	"N"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "C": {
+            "item": "minecraft:coarse_dirt"
+        },
+        "N": {
+            "item": "minecraft:nether_wart"
+        }
+    },
+    "result": {
+        "item": "minecraft:melon_seeds",
+        "count": 1
+    }
+}

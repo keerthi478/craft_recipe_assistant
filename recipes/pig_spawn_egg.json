@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "WCW"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:apple"
+        },
+        "W": {
+            "item": "minecraft:lava_bucket"
+        },
+        "C": {
+            "item": "minecraft:chicken_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:pig_spawn_egg",
+        "count": 1
+    }
+}

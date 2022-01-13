@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        " A "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:lava_bucket"
+        },
+        "C": {
+            "item": "minecraft:chicken_spawn_egg"
+        },
+        "A": {
+            "item": "minecraft:apple"
+        }
+    },
+    "result": {
+        "item": "minecraft:sheep_spawn_egg",
+        "count": 1
+    }
+}

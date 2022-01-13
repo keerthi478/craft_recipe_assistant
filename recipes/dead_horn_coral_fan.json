@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "ingredient": [
+        {
+            "item": "minecraft:oak_leaves"
+        },
+        {
+            "item": "minecraft:spruce_leaves"
+        },
+        {
+            "item": "minecraft:birch_leaves"
+        },
+        {
+            "item": "minecraft:jungle_leaves"
+        },
+        {
+            "item": "minecraft:acacia_leaves"
+        },
+        {
+            "item": "minecraft:dark_oak_leaves"
+        }
+    ],
+    "result": "minecraft:dead_horn_coral_fan",
+    "experience": 0.1,
+    "cookingtime": 10
+}

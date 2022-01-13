@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C",
+        "C#"
+    ],
+    "key": {
+        "#": [
+            {
+                "item": "minecraft:dirt"
+            },
+            {
+                "item": "minecraft:coarse_dirt"
+            }
+        ],
+        "C": {
+            "item": "minecraft:cobblestone"
+        }
+    },
+    "result": {
+        "item": "minecraft:gravel",
+        "count": 4
+    }
+}

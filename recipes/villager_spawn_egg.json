@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "BOB",
+        "WSL"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:netherite_helmet"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "O": {
+            "item": "minecraft:oak_sapling"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        },
+        "S": {
+            "item": "minecraft:soul_soil"
+        },
+        "L": {
+            "item": "minecraft:lava_bucket"
+        }
+    },
+    "result": {
+        "item": "minecraft:villager_spawn_egg",
+        "count": 1
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        " N "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:oak_sapling"
+        },
+        "S": {
+            "item": "minecraft:spider_eye"
+        },
+        "N": {
+            "item": "minecraft:nether_wart"
+        }
+    },
+    "result": {
+        "item": "minecraft:dark_oak_sapling",
+        "count": 1
+    }
+}

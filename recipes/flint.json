@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": [
+        {
+            "item": "minecraft:charcoal"
+        },
+        {
+            "item": "minecraft:coal"
+        }
+    ],
+    "result": "minecraft:flint",
+    "experience": 0.5,
+    "cookingtime": 10
+}

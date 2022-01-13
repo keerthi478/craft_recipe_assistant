@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#OC",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bone"
+        },
+        "O": {
+            "item": "minecraft:oak_sapling"
+        },
+        "C": {
+            "item": "minecraft:coal"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "minecraft:chicken_spawn_egg",
+        "count": 1
+    }
+}
