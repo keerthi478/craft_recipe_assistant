@@ -37,6 +37,7 @@ $(APPNAME): $(OBJ)
 
 # Creates the dependecy rules
 %.d: $(SRCDIR)/%$(EXT)
+	$(shell if [ ! -d $(OBJDIR) ]; then mkdir -p $(OBJDIR); fi)
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
 # Includes all .h files
