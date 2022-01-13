@@ -55,12 +55,12 @@ $(OBJDIR)/%.o: $(SRCDIR)/%$(EXT)
 # Cleans complete project
 .PHONY: clean
 clean:
-	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
+	$(RM) -f $(DELOBJ) $(DEP) $(APPNAME)
 
 # Cleans only all files with the extension .d
 .PHONY: cleandep
 cleandep:
-	$(RM) $(DEP)
+	$(RM) -f $(DEP)
 
 #################### Cleaning rules for Windows OS #####################
 # Cleans complete project
