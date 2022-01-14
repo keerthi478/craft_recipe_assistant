@@ -2,6 +2,9 @@
 #include <json.hpp>
 #include <filesystem.hpp>
 
+#include "recipe.hpp"
+#include "recipe_render.hpp"
+
 int main(int argc, char const *argv[])
 {
     ghc::filesystem::path recipePath{"recipes/"};
