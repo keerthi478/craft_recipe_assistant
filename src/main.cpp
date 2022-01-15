@@ -26,5 +26,10 @@ int main(int argc, char const *argv[])
                   << type << " => " << result << std::endl;
     }
 
+    nlohmann::json j;
+    j["type"] = RecipeType::CampfireCooking;
+
+    std::cout << j.dump(4) << std::endl;
+
     return 0;
 }
