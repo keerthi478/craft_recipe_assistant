@@ -4,7 +4,7 @@
 [issues]: https://github.com/Ohto-Ai/craft_recipe_assistant/issues
 [stargazers]: https://github.com/Ohto-Ai/craft_recipe_assistant/stargazers
 [pulls]: https://github.com/Ohto-Ai/craft_recipe_assistant/pulls
-[commit-activity]: https://github.com/badges/shields/pulse
+[commit-activity]: https://github.com/Ohto-Ai/craft_recipe_assistant/pulse
 [contributors]: https://github.com/Ohto-Ai/craft_recipe_assistant/contributors
 [use-this]: https://github.com/Ohto-Ai/craft_recipe_assistant/generate
 [circleci:badge]: https://img.shields.io/circleci/project/github/Ohto-Ai/craft_recipe_assistant/master
