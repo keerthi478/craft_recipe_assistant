@@ -4,8 +4,8 @@
 
 # Compiler settings - Can be customized.
 CC = g++
-CXXFLAGS = -std=c++11 -Wall -lpthread -O3 -Isrc/3rd/include/
-LDFLAGS =
+CXXFLAGS = -std=c++11 -Wall -O3 -Isrc/3rd/include/ -L/usr/X11R6/lib
+LDFLAGS = -lm -lpthread -lX11
 
 # Makefile settings - Can be customized.
 APPNAME = cra
