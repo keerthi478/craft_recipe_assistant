@@ -1,5 +1,5 @@
-#include <json.hpp>
-#include <CImg.h>
+#include <nlohmann/json.hpp>
+#include <CImg/CImg.h>
 
 class RecipeRender
 {

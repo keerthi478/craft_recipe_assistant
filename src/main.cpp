@@ -1,7 +1,7 @@
 #include <iostream>
-#include <json.hpp>
-#include <filesystem.hpp>
-#include <CImg.h>
+#include <nlohmann/json.hpp>
+#include <ghc/filesystem.hpp>
+#include <CImg/CImg.h>
 
 #include "recipe.hpp"
 #include "recipe_render.hpp"

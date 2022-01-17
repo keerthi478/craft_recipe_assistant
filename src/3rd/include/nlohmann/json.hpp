@@ -2367,7 +2367,7 @@ using is_detected_convertible =
         #endif
 
         // no filesystem support before MSVC 19.14: https://en.cppreference.com/w/cpp/compiler_support
-        #if defined(_MSC_VER) && _MSC_VER < 1914
+        #if defined(_MSC_VER) && _MSC_VER < 1940
             #undef JSON_HAS_FILESYSTEM
             #undef JSON_HAS_EXPERIMENTAL_FILESYSTEM
         #endif
@@ -14935,6 +14935,7 @@ class binary_writer
 #include <limits> // numeric_limits
 #include <string> // string, char_traits
 #include <iomanip> // setfill, setw
+#include <sstream> // stringstream
 #include <type_traits> // is_same
 #include <utility> // move
 
@@ -16543,7 +16544,9 @@ class serializer
                     {
                         case error_handler_t::strict:
                         {
-                            JSON_THROW(type_error::create(316, "invalid UTF-8 byte at index " + std::to_string(i) + ": 0x" + hex_bytes(byte | 0), BasicJsonType()));
+                            std::stringstream ss;
+                            ss << std::uppercase << std::setfill('0') << std::setw(2) << std::hex << (byte | 0);
+                            JSON_THROW(type_error::create(316, "invalid UTF-8 byte at index " + std::to_string(i) + ": 0x" + ss.str(), BasicJsonType()));
                         }
 
                         case error_handler_t::ignore:
@@ -16635,7 +16638,9 @@ class serializer
             {
                 case error_handler_t::strict:
                 {
-                    JSON_THROW(type_error::create(316, "incomplete UTF-8 string; last byte: 0x" + hex_bytes(static_cast<std::uint8_t>(s.back() | 0)), BasicJsonType()));
+                    std::stringstream ss;
+                    ss << std::uppercase << std::setfill('0') << std::setw(2) << std::hex << (static_cast<std::uint8_t>(s.back()) | 0);
+                    JSON_THROW(type_error::create(316, "incomplete UTF-8 string; last byte: 0x" + ss.str(), BasicJsonType()));
                 }
 
                 case error_handler_t::ignore:
@@ -16700,20 +16705,6 @@ class serializer
             x = x / 10000u;
             n_digits += 4;
         }
-    }
-
-    /*!
-     * @brief convert a byte to a uppercase hex representation
-     * @param[in] byte byte to represent
-     * @return representation ("00".."FF")
-     */
-    static std::string hex_bytes(std::uint8_t byte)
-    {
-        std::string result = "FF";
-        constexpr const char* nibble_to_hex = "0123456789ABCDEF";
-        result[0] = nibble_to_hex[byte / 16];
-        result[1] = nibble_to_hex[byte % 16];
-        return result;
     }
 
     // templates to avoid warnings about useless casts
