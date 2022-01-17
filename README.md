@@ -1,4 +1,5 @@
-# Craft Recipe Assistant
+
+# <img src="craft.png" style="width: 32px;">Craft Recipe Assistant
 
 [circleci]: https://app.circleci.com/pipelines/github/Ohto-Ai/craft_recipe_assistant
 [issues]: https://github.com/Ohto-Ai/craft_recipe_assistant/issues
@@ -17,9 +18,9 @@
 [repository]: https://github.com/Ohto-Ai/craft_recipe_assistant
 
 [![License][license:badge]](/LICENSE)
-[![Issues][issues:badge]][issues]
+[![Issues][issues:badge]][issues]  
 [![Stargazers][stargazers:badge]][stargazers]
-[![Pulls][pulls:badge]][pulls]
+[![Pulls][pulls:badge]][pulls]  
 [![Contributors][contributors:badge]][contributors]
 [![Commit Activity][commit-activity:badge]][commit-activity]
 
